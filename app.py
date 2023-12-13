@@ -27,7 +27,7 @@ def user_input():
     inputter = {}
     for i in feature:
         if 'education' not in i :
-            if 'amt' not in i:
+            if 'amt' in i:
                 inputter[i] = st.sidebar.slider(i,-1000,1000,1)
             else:
                 inputter[i] = st.sidebar.slider(i,-10,10,1)
